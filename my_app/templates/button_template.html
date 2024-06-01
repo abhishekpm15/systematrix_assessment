@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Button Example</title>
+    <style>
+        .my-button {
+            background-color: blue;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+        }
+        .my-button.change-color {
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <button class="my-button" onclick="changeColor(this)">Click Me</button>
+
+    <script>
+        function changeColor(button) {
+            button.classList.toggle('change-color');
+        }
+    </script>
+</body>
+</html>
